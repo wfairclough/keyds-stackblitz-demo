@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@keyds/key-design-system@0.0.1-2/dist/key-design-system/key-design-system.css"
+    />
+    <script type="module">
+      import { defineCustomElements } from 'https://cdn.jsdelivr.net/npm/@keyds/key-design-system@0.0.1-2/loader/index.js';
+      defineCustomElements();
+      document.body.style = '';
+    </script>
+  </head>
+  <body style="display: none">
+    <key-button variation="plain">Plain Button</key-button>
+    <key-button variation="primary">Primary Button</key-button>
+    <key-button variation="secondary">Secondary Button</key-button>
+    <key-button variation="tertiary">Tertiary Button</key-button>
+    <key-button variation="destructive">Destructive Button</key-button>
+    <key-divider></key-divider>
+    <key-list>
+      <key-button variation="plain" expanded
+        >Expanded Primary Button</key-button
+      >
+      <key-button variation="primary" expanded
+        >Expanded Primary Button</key-button
+      >
+    </key-list>
+    <key-divider margin="small"></key-divider>
+    <key-link url="https://keyds.design/"
+      >Almost before we knew it, we had left the ground</key-link
+    >
+    <key-divider margin="small"></key-divider>
+    <key-list>
+      <key-list-item label-size="50">
+        <span slot="label">Toronto</span>
+        <span slot="value">Maple Leafs</span>
+      </key-list-item>
+      <key-list-item label-size="80">
+        <span slot="label">Ottawa</span>
+        <span slot="value">Senators</span>
+      </key-list-item>
+      <key-list-item>
+        <span slot="label">Edmonton</span>
+        <span slot="value">Oilers</span>
+      </key-list-item>
+      <key-list-item>
+        <span slot="label">Vancouver</span>
+        <span slot="value">Canucks</span>
+      </key-list-item>
+    </key-list>
+  </body>
+</html>
